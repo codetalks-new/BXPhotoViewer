@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import BXPhotoViewer
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        let url = "http://ww4.sinaimg.cn/large/72973f93gw1exmgz9wywcj216o1kwnfs.jpg"
+        let image = UIImage(named: "karry.jpg")!
+        presentPhoto(url)
+    
     }
 
     override func didReceiveMemoryWarning() {
