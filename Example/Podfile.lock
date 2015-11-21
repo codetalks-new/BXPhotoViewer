@@ -1,0 +1,17 @@
+PODS:
+  - BXPhotoViewer (1.0.0)
+  - Reveal-iOS-SDK (1.6.2)
+
+DEPENDENCIES:
+  - BXPhotoViewer (from `../`)
+  - Reveal-iOS-SDK
+
+EXTERNAL SOURCES:
+  BXPhotoViewer:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BXPhotoViewer: f44d34f7d36df73d5dbf453e300da3d3111f6dc1
+  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
+
+COCOAPODS: 0.39.0

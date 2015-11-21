@@ -1,0 +1,6 @@
+framework module BXPhotoViewer {
+  umbrella header "BXPhotoViewer-umbrella.h"
+
+  export *
+  module * { export * }
+}

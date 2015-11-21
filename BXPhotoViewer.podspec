@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "BXPhotoViewer"
   s.version          = "1.0.0"
-  s.summary          = "A short description of BXPhotoViewer."
+  s.summary          = "BXPhotoViewer is a simple Photo Viewer ViewController "
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,14 +17,16 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+BXPhotoViewer is a simple Photo Viewer ViewController
+One for viewer simgle Photo,One for browser a set of Phtos.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/BXPhotoViewer"
+  s.homepage         = "https://github.com/banxi1988/BXPhotoViewer"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "banxi1988" => "banxi1988@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/BXPhotoViewer.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/banxi1988/BXPhotoViewer.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/banxi1988'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
