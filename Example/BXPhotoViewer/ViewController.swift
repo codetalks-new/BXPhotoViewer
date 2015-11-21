@@ -9,6 +9,8 @@
 import UIKit
 import BXPhotoViewer
 
+
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -21,8 +23,10 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         let url = "http://ww4.sinaimg.cn/large/72973f93gw1exmgz9wywcj216o1kwnfs.jpg"
         let image = UIImage(named: "karry.jpg")!
-        presentPhoto(url)
-    
+      let photos : [BXPhotoViewable] = [url,image]
+      let vc = BXPhotoViewerViewController(photos:photos)
+      showViewController(vc, sender: self)
+     
     }
 
     override func didReceiveMemoryWarning() {

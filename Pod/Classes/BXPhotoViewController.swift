@@ -40,6 +40,8 @@ public class BXPhotoViewController: UIViewController {
     var scrollView:BXImageScrollView = BXImageScrollView(frame: CGRect(x: 0, y: 0, width: 320, height: 480))
     var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
   
+    var page:Int = 0
+  
     public init(photo:BXPhotoViewable){
         self.photo = photo
         super.init(nibName: nil, bundle:nil)
