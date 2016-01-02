@@ -8,10 +8,11 @@
 
 import UIKit
 import BXPhotoViewer
+import Photos
 
 
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +20,12 @@ class ViewController: UIViewController {
         
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
+  @IBOutlet weak var showPhotoCell: UITableViewCell!
+  @IBOutlet weak var compressPhotoCell: UITableViewCell!
+  @IBOutlet weak var chooseAssetThenCompress: UITableViewCell!
+  
+ 
+  func showPhoto(){
         let url = "http://ww4.sinaimg.cn/large/72973f93gw1exmgz9wywcj216o1kwnfs.jpg"
         let image = UIImage(named: "karry.jpg")!
       let photos : [BXPhotoViewable] = [url,image]
@@ -29,10 +34,56 @@ class ViewController: UIViewController {
      
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  
+  func showCompressPhoto(){
+      let image = UIImage(named: "karry.jpg")!
+    showCompressImage(image)
+  }
+  
+  func showCompressPhoto(asset:PHAsset){
+    PHCachingImageManager().requestImageDataForAsset(asset, options: nil) { (data, name, orintation, info) -> Void in
+      NSLog("requestedImage:isMainThread:\(NSThread.isMainThread()))")
+      self.showCompressImage(UIImage(data: data!)!)
     }
+  }
+  
+  func showCompressImage(image:UIImage){
+    let vc = BXPhotoInteractiveCompressViewController()
+    vc.image = image
+    presentViewController(vc, animated: true, completion: nil)
+  }
+  
+  func chooseAssetThenCompressAsset(){
+    let successBlock :ALImageFetchingInteractorSuccess = {
+      (assets:[PHAsset]) in
+      self.showCompressPhoto(assets[0])
+    }
+    ALImageFetchingInteractor().onSuccess(successBlock).fetch()
+  }
 
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    let cell = tableView.cellForRowAtIndexPath(indexPath)
+    switch cell!{
+    case  showPhotoCell:
+      showPhoto()
+    case compressPhotoCell:
+       showCompressPhoto()
+    case chooseAssetThenCompress:
+      chooseAssetThenCompressAsset()
+    default:break
+    }
+  }
+
+}
+
+extension ViewController:BXPhotoInteractiveCompressViewControllerDelegate{
+  
+  func photoInteractiveCompressViewControllerDidCanceled(controller: BXPhotoInteractiveCompressViewController) {
+    
+  }
+  
+  func photoInteractiveCompressViewController(controller: BXPhotoInteractiveCompressViewController, compressedImage: UIImage) {
+    
+  }
 }
 

@@ -114,6 +114,12 @@ public class BXImageScrollView: UIScrollView {
     addSubview(zoomView!)
     configureForImageSize(image.size)
   }
+  
+  public func updateImage(image:UIImage){
+   let oldZoomScale = zoomScale
+    displayImage(image)
+    zoomScale = oldZoomScale
+  }
  
   
   func configureForImageSize(size:CGSize){

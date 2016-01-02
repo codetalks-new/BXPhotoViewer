@@ -85,7 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-BXPhotoViewer_Tests/BXPhotoViewer.framework"
+  install_framework "Pods-BXPhotoViewer_Tests/PinAutoLayout.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-BXPhotoViewer_Tests/BXPhotoViewer.framework"
+  install_framework "Pods-BXPhotoViewer_Tests/PinAutoLayout.framework"
 fi

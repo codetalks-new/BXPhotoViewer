@@ -13,7 +13,7 @@ public extension UIViewController{
   public func presentPhoto(photo:BXPhotoViewable,loadImageBlock block:BXLoadImageBlock?=nil){
     let vc = BXPhotoViewController(photo: photo)
     let doneButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: "bx_dismissPhotoViewController:")
-    vc.navigationItem.rightBarButtonItem = doneButton
+    vc.navigationItem.leftBarButtonItem = doneButton
     vc.automaticallyAdjustsScrollViewInsets = false
     vc.loadImageBlock = block
   
@@ -30,6 +30,14 @@ public extension UIViewController{
   
   func bx_dismissPhotoViewController(sender:AnyObject){
       dismissViewControllerAnimated(true, completion: nil)
+  }
+}
+
+internal func runInUIThread(closure:dispatch_block_t){
+  if NSThread.isMainThread(){
+    closure()
+  }else{
+    dispatch_async(dispatch_get_main_queue(), closure)
   }
 }
 
@@ -68,13 +76,17 @@ public class BXPhotoViewController: UIViewController {
         activityIndicator.startAnimating()
         if let loadBlock = loadImageBlock{
           loadBlock(URL: URL){[weak self] image in
-            self?.scrollView.displayImage(image)
-            self?.activityIndicator.stopAnimating()
+            runInUIThread{
+              self?.scrollView.displayImage(image)
+              self?.activityIndicator.stopAnimating()
+            }
           }
         }else{
           load(URL){[weak self] image in
-            self?.scrollView.displayImage(image)
-            self?.activityIndicator.stopAnimating()
+            runInUIThread{
+              self?.scrollView.displayImage(image)
+              self?.activityIndicator.stopAnimating()
+            }
           }
         }
       }
@@ -84,7 +96,7 @@ public class BXPhotoViewController: UIViewController {
       let loadTask =  NSURLSession.sharedSession().dataTaskWithURL(imageURL) { (data, resp, error) -> Void in
         if let data = data{
           if let image = UIImage(data: data){
-            dispatch_async(dispatch_get_main_queue()){
+            runInUIThread{
               handler(image)
             }
           }

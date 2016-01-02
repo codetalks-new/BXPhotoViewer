@@ -38,4 +38,5 @@ One for viewer simgle Photo,One for browser a set of Phtos.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
+  s.dependency 'PinAutoLayout'
 end

@@ -7,130 +7,210 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CF101ABF705233C69E09AA4258EC73E /* BXPhotoViewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13BCDB2E96608E03E29C45B479579E01 /* BXPhotoViewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DF67877B3312C307C2221C3E5C6FBED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		0FCE67D7A86C9E892C4EBC8A9F5A21BA /* BXPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D95E15B35894184F42E995EB89EC5 /* BXPhotoViewController.swift */; };
-		1C971DD15F3A44A68867E51571806D75 /* Pods-BXPhotoViewer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D5F1E011D2CC3E5CCF428BD3ED5A444 /* Pods-BXPhotoViewer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20CB3581641389A29D5E5093CD8CFB6B /* Pods-BXPhotoViewer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C87683FD4E8C0CBE65E548E303F604 /* Pods-BXPhotoViewer_Tests-dummy.m */; };
-		5466BBCCB20D0C6E9D31C5BB45ED0086 /* BXPhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015B233E8B9F2057F567699BFCAD68BE /* BXPhotoViewerViewController.swift */; };
-		7972A7B610D29B43F70EEE10D3604667 /* Pods-BXPhotoViewer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9187073393190E31BCE82419B2DA0894 /* Pods-BXPhotoViewer_Example-dummy.m */; };
-		7AC4F0CAF628A26CF29266CCD291C3E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		8C4FC6E1024AD5952EFF59158100902C /* BXImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD583A33EAFE199E3D783F4D6BE8CAFB /* BXImageScrollView.swift */; };
-		917A68938F2E97B95A6A9B3312D0CC53 /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006DA5B68DA9F9A880518D24CCC15C5D /* protocols.swift */; };
-		D183C8CDAED622896764AF2663462E9C /* BXPhotoViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C7FD34603C6EF24BFFDC8812BF5A51 /* BXPhotoViewer-dummy.m */; };
-		D1FC016569ABAC36047531ED574E4A1B /* BXPhotoViewer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD2A256ED2D1E13BB613FC89EC8B5923 /* BXPhotoViewer.bundle */; };
-		DABF81FB5FB5722C5A907A63A67C8C15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		DD33E37CC97251030DC36DF11CC81D81 /* Pods-BXPhotoViewer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F2EE8DC16C9347F1016D1F7156D797B /* Pods-BXPhotoViewer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		195A3907088D0F8C7039E9A46A5D898F /* BXImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD0AE7DE36BD0DC320767134020FFB /* BXImageScrollView.swift */; };
+		1F7F5F70CC3033CF04120979AD4F113C /* UIView+PinAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B39C87B7AF3707E2D86B298ACC3B4A /* UIView+PinAutoLayout.swift */; };
+		2147F38EE916DF8CBB674AB92A0B9CA1 /* PinAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04774F33ADAEF191967119DA78A4E6F7 /* PinAutoLayout.framework */; };
+		338A8A0518B380327D83B3D354DF4067 /* BXPhotoViewer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B07641795B021F4689800C6984798117 /* BXPhotoViewer.bundle */; };
+		34BF8F370A5F626CD2921398DB369375 /* UIView+LinearAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E27E0E9663D1C0B9B74EB5837417B9F /* UIView+LinearAutoLayout.swift */; };
+		3AE70293A078EE5441BE3830460B208A /* BXPhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074EE2B4EEDC550BA55299F1396EC55 /* BXPhotoViewerViewController.swift */; };
+		5515022D6D7FFDB311994D247266C0CF /* Pods-BXPhotoViewer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D5F1E011D2CC3E5CCF428BD3ED5A444 /* Pods-BXPhotoViewer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6360C731ED3EC57E09F8436EF4AD4AFE /* Pods-BXPhotoViewer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F2EE8DC16C9347F1016D1F7156D797B /* Pods-BXPhotoViewer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6928073690DD95DC555EDA30DB77D5EE /* BXPhotoInteractiveCompressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77B27C8380BD9A9D052CD2A7648048C /* BXPhotoInteractiveCompressViewController.swift */; };
+		7134075175765068E6E7AF82CD49A1F0 /* BXPhotoViewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13BCDB2E96608E03E29C45B479579E01 /* BXPhotoViewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8253256755BBF5D6F4D305CFFEEF7FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB07F54204BAFAE300703CF2E73F889 /* Foundation.framework */; };
+		C45FF62B51BC7D0B94F522AE2FCF7A1C /* PinAutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E689C14E2C9F549430AF1A99A09226 /* PinAutoLayout-dummy.m */; };
+		C60087EB1A3F71CE8A0065CE58FD2B30 /* PinAutoLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94F7A4AE0426476C947A70C7B4025C42 /* PinAutoLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C91A8D0C9A3B9BB20526608DF46F0B8B /* BXPhotoViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C7FD34603C6EF24BFFDC8812BF5A51 /* BXPhotoViewer-dummy.m */; };
+		CB4D2E99FEBB52ACC6A9165FD3AFF5E6 /* Pods-BXPhotoViewer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C87683FD4E8C0CBE65E548E303F604 /* Pods-BXPhotoViewer_Tests-dummy.m */; };
+		DBED25F2359156AC90598579A29A7B99 /* Pods-BXPhotoViewer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9187073393190E31BCE82419B2DA0894 /* Pods-BXPhotoViewer_Example-dummy.m */; };
+		E0FA4F122D904D82594F40E4DB65BF31 /* UIViewController+PinAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE830C2CDECF97EE5ED57A6E544B2FB /* UIViewController+PinAutoLayout.swift */; };
+		E1C8AF057E0473C6B58C5107295F1E81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB07F54204BAFAE300703CF2E73F889 /* Foundation.framework */; };
+		E27AB05264FC338624DDC932BFAFB3FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB07F54204BAFAE300703CF2E73F889 /* Foundation.framework */; };
+		E8D36338B5E973B658145758DC722EF5 /* BXPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CE9B4302B17E52A905D820B1F0B408 /* BXPhotoViewController.swift */; };
+		EBFCFA7C99BAAB2847A0C6E7B2D95F6C /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C09CE18CBC3ADEA4E9135251A5CE4 /* protocols.swift */; };
+		F0A30D262187F955965FFA4FC244FAD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB07F54204BAFAE300703CF2E73F889 /* Foundation.framework */; };
+		FD7170859B55EDE21CE612EF9306C295 /* PinAutoLayout.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3F23101085C80ABD947F2532AE4E5212 /* PinAutoLayout.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		520BA8F0B29CE46880F569B30C8AFE2A /* PBXContainerItemProxy */ = {
+		530D3636CD0F9A727B09F39C2E41302A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F4D993A46719BD17DC1DB66CAC2FBA51;
+			remoteGlobalIDString = F700E92C235F037964975EBAA2E891D4;
+			remoteInfo = PinAutoLayout;
+		};
+		898DA9532BE2D5F6770B38CB6E345C35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B875AB193A58C09D41AF179F6AE8E323;
 			remoteInfo = BXPhotoViewer;
 		};
-		71AE9B5778EFDB9F84C12DE595FCAED5 /* PBXContainerItemProxy */ = {
+		92D924B6047B2816ADE77D48B88DA979 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BF3F8B1DE7CF31BFF6B3CE84867C439B;
+			remoteGlobalIDString = F700E92C235F037964975EBAA2E891D4;
+			remoteInfo = PinAutoLayout;
+		};
+		969DD34C6A1AD1A008B46900449A1BDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB7F26A473F4C5A2303F655522943A1D;
+			remoteInfo = "PinAutoLayout-PinAutoLayout";
+		};
+		984563EBF15D1310BD79307FFFC8D595 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B875AB193A58C09D41AF179F6AE8E323;
+			remoteInfo = BXPhotoViewer;
+		};
+		B49AA70038EBE7D5270B90D0D8938873 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBEB613BBBB0633177C85A0327AD952C;
 			remoteInfo = "BXPhotoViewer-BXPhotoViewer";
 		};
-		D6B4C4940BD37D54C9044AF676AB9349 /* PBXContainerItemProxy */ = {
+		BCCD9BC6F545F0B20899F6285FAB3738 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F4D993A46719BD17DC1DB66CAC2FBA51;
-			remoteInfo = BXPhotoViewer;
+			remoteGlobalIDString = F700E92C235F037964975EBAA2E891D4;
+			remoteInfo = PinAutoLayout;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		006DA5B68DA9F9A880518D24CCC15C5D /* protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
-		015B233E8B9F2057F567699BFCAD68BE /* BXPhotoViewerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BXPhotoViewerViewController.swift; sourceTree = "<group>"; };
 		01C7FD34603C6EF24BFFDC8812BF5A51 /* BXPhotoViewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BXPhotoViewer-dummy.m"; sourceTree = "<group>"; };
-		12DFEEB3509D877B6CE65BCE2EEB0562 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "Reveal-Framework-iOS-1.6.2/Reveal.framework"; sourceTree = "<group>"; };
+		04774F33ADAEF191967119DA78A4E6F7 /* PinAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BCDB2E96608E03E29C45B479579E01 /* BXPhotoViewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BXPhotoViewer-umbrella.h"; sourceTree = "<group>"; };
 		1418784D6B217AE8F47E8864E9250F18 /* Pods-BXPhotoViewer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BXPhotoViewer_Example.modulemap"; sourceTree = "<group>"; };
+		187C09CE18CBC3ADEA4E9135251A5CE4 /* protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
 		1F2EE8DC16C9347F1016D1F7156D797B /* Pods-BXPhotoViewer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BXPhotoViewer_Tests-umbrella.h"; sourceTree = "<group>"; };
 		25A2C5DD7AAEC0FFD3E5D4E28D16F6BF /* Pods-BXPhotoViewer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BXPhotoViewer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		28F04EFFC54031EE6DD3D372F75B8BEE /* Pods-BXPhotoViewer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BXPhotoViewer_Tests.modulemap"; sourceTree = "<group>"; };
 		2D89DE3CE3ECDEE92D6610FFD56372C9 /* Pods-BXPhotoViewer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BXPhotoViewer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		380D2801A8C6DB92581DC4F914EB54C8 /* Pods-BXPhotoViewer_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BXPhotoViewer_Example-resources.sh"; sourceTree = "<group>"; };
+		39463CFE66B8E063B3A248F16F933380 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39AA474A7FB66AEA15991E286C2048F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3AC00BA84B06EC3A7173F1E64144EABB /* Pods_BXPhotoViewer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BXPhotoViewer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F23101085C80ABD947F2532AE4E5212 /* PinAutoLayout.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinAutoLayout.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		408D284D23C777D8EE0CDE319A476544 /* BXPhotoViewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BXPhotoViewer.modulemap; sourceTree = "<group>"; };
 		461D1DADCE59677E38ADAEE4F9265A77 /* BXPhotoViewer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BXPhotoViewer.xcconfig; sourceTree = "<group>"; };
+		48CE9B4302B17E52A905D820B1F0B408 /* BXPhotoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BXPhotoViewController.swift; sourceTree = "<group>"; };
 		560381491A6469765943A55409BDABCF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ED396584B8DD62F8A0868AB4554FDB9 /* PinAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6127A932BEB72247CBD6ADB4A86DFE75 /* Pods-BXPhotoViewer_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BXPhotoViewer_Tests-resources.sh"; sourceTree = "<group>"; };
+		66AD0AE7DE36BD0DC320767134020FFB /* BXImageScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BXImageScrollView.swift; sourceTree = "<group>"; };
 		6A4D0AB69C6E4FDB694F6D5F1E97B785 /* Pods-BXPhotoViewer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BXPhotoViewer_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6DA5DDC61ACFC42F03F0350D2AEF6B67 /* BXPhotoViewer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BXPhotoViewer-prefix.pch"; sourceTree = "<group>"; };
 		6EC0EC61DD67AEBB93E2830F37BAF5D8 /* Pods-BXPhotoViewer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BXPhotoViewer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6F9B9DE9B7E0FC01FE32E73DE1A38FF4 /* Pods-BXPhotoViewer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BXPhotoViewer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		746E05236237940CFF94773D7BF4860A /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "Reveal-Framework-iOS-1.6.2/Reveal.framework"; sourceTree = "<group>"; };
 		78C87683FD4E8C0CBE65E548E303F604 /* Pods-BXPhotoViewer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BXPhotoViewer_Tests-dummy.m"; sourceTree = "<group>"; };
+		7A384A42ED35DF3BA2947540581A7DEF /* PinAutoLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinAutoLayout.xcconfig; sourceTree = "<group>"; };
 		7D5F1E011D2CC3E5CCF428BD3ED5A444 /* Pods-BXPhotoViewer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BXPhotoViewer_Example-umbrella.h"; sourceTree = "<group>"; };
 		7F3DC733C4A30F45A380EACA7CB93108 /* Pods-BXPhotoViewer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BXPhotoViewer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7FE830C2CDECF97EE5ED57A6E544B2FB /* UIViewController+PinAutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+PinAutoLayout.swift"; path = "Pod/Classes/UIViewController+PinAutoLayout.swift"; sourceTree = "<group>"; };
 		85DC5336DFD93A3FA52CD8B495F7DCF7 /* Pods-BXPhotoViewer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BXPhotoViewer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8C8D95E15B35894184F42E995EB89EC5 /* BXPhotoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BXPhotoViewController.swift; sourceTree = "<group>"; };
-		9145F6703C8EB97C42C5CCE72BD0C715 /* Pods_BXPhotoViewer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BXPhotoViewer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C337C4D9E7C6A90437E14FC0A65EC27 /* Pods_BXPhotoViewer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BXPhotoViewer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E27E0E9663D1C0B9B74EB5837417B9F /* UIView+LinearAutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+LinearAutoLayout.swift"; path = "Pod/Classes/UIView+LinearAutoLayout.swift"; sourceTree = "<group>"; };
 		9187073393190E31BCE82419B2DA0894 /* Pods-BXPhotoViewer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BXPhotoViewer_Example-dummy.m"; sourceTree = "<group>"; };
+		94F7A4AE0426476C947A70C7B4025C42 /* PinAutoLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinAutoLayout-umbrella.h"; sourceTree = "<group>"; };
+		A074EE2B4EEDC550BA55299F1396EC55 /* BXPhotoViewerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BXPhotoViewerViewController.swift; sourceTree = "<group>"; };
 		AA60D6EBCC23FF6E981D7A51D92DC730 /* Pods-BXPhotoViewer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BXPhotoViewer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		AD2A256ED2D1E13BB613FC89EC8B5923 /* BXPhotoViewer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BXPhotoViewer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07641795B021F4689800C6984798117 /* BXPhotoViewer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BXPhotoViewer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		DB86A3A1860CFD468AC9F27294C6AA65 /* Pods_BXPhotoViewer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BXPhotoViewer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC6B834C11C40BA0A335E6EA41B07AE0 /* BXPhotoViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BXPhotoViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD583A33EAFE199E3D783F4D6BE8CAFB /* BXImageScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BXImageScrollView.swift; sourceTree = "<group>"; };
+		BDFE93EDCC27728E4E90FA8EC8B41EEE /* BXPhotoViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BXPhotoViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C77B27C8380BD9A9D052CD2A7648048C /* BXPhotoInteractiveCompressViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BXPhotoInteractiveCompressViewController.swift; sourceTree = "<group>"; };
+		CB6008A525BE8C82AA2AAD4AF9D3D579 /* PinAutoLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PinAutoLayout.modulemap; sourceTree = "<group>"; };
+		D7B39C87B7AF3707E2D86B298ACC3B4A /* UIView+PinAutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinAutoLayout.swift"; path = "Pod/Classes/UIView+PinAutoLayout.swift"; sourceTree = "<group>"; };
+		DF338EA4F52358367DD95ED81D3D01C2 /* PinAutoLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinAutoLayout-prefix.pch"; sourceTree = "<group>"; };
 		E161C07B68E63373800CB13B9554E812 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E689C14E2C9F549430AF1A99A09226 /* PinAutoLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PinAutoLayout-dummy.m"; sourceTree = "<group>"; };
+		EDB07F54204BAFAE300703CF2E73F889 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F408A8B3EC7D9C8DD103FD6A8ABE54C2 /* Pods-BXPhotoViewer_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BXPhotoViewer_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		FBA7668C1F1469E659F774D3F092C463 /* Pods-BXPhotoViewer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BXPhotoViewer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		190A50FDF6BB7E60090F69BAF8467033 /* Frameworks */ = {
+		1D47EC26A01C8D402777434CF0EFF3C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8253256755BBF5D6F4D305CFFEEF7FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C61AB83F205B6023FB5DEA2A0F73D365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C8AF057E0473C6B58C5107295F1E81 /* Foundation.framework in Frameworks */,
+				2147F38EE916DF8CBB674AB92A0B9CA1 /* PinAutoLayout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74BDAD177CA5B12E44A74E9F7521DA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B537CA98F304B6F10BB7AC088CEF532 /* Frameworks */ = {
+		C88344475480793712A6A341844B7EC2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DABF81FB5FB5722C5A907A63A67C8C15 /* Foundation.framework in Frameworks */,
+				E27AB05264FC338624DDC932BFAFB3FA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CF120726E67CF6CC609636595726BAF /* Frameworks */ = {
+		E6EE90FAC6609F966E53DE5FCD228096 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC4F0CAF628A26CF29266CCD291C3E6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B75572697CB68A91ED3D8754AB01E6DC /* Frameworks */ = {
+		FDBB8FBBBD6E37BA8BF7DF15C5EB70BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DF67877B3312C307C2221C3E5C6FBED /* Foundation.framework in Frameworks */,
+				F0A30D262187F955965FFA4FC244FAD0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		133CD9DAEF11933CC235DFDED18F07CD /* Products */ = {
+		1201521216F8B776BC26CF7133978281 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AD2A256ED2D1E13BB613FC89EC8B5923 /* BXPhotoViewer.bundle */,
-				DC6B834C11C40BA0A335E6EA41B07AE0 /* BXPhotoViewer.framework */,
-				9145F6703C8EB97C42C5CCE72BD0C715 /* Pods_BXPhotoViewer_Example.framework */,
-				DB86A3A1860CFD468AC9F27294C6AA65 /* Pods_BXPhotoViewer_Tests.framework */,
+				04774F33ADAEF191967119DA78A4E6F7 /* PinAutoLayout.framework */,
+				1607646CA2C00FA9558B1695179B2CEE /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1607646CA2C00FA9558B1695179B2CEE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EDB07F54204BAFAE300703CF2E73F889 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3265211EA0B77E314A6A817F825E8A88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				746E05236237940CFF94773D7BF4860A /* Reveal.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		38A7B47F7EB3B736559CE96AD26D534B /* Targets Support Files */ = {
@@ -142,14 +222,72 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		39DD7246D45ED04B5026E81B96386DEC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				66AD0AE7DE36BD0DC320767134020FFB /* BXImageScrollView.swift */,
+				C77B27C8380BD9A9D052CD2A7648048C /* BXPhotoInteractiveCompressViewController.swift */,
+				48CE9B4302B17E52A905D820B1F0B408 /* BXPhotoViewController.swift */,
+				A074EE2B4EEDC550BA55299F1396EC55 /* BXPhotoViewerViewController.swift */,
+				187C09CE18CBC3ADEA4E9135251A5CE4 /* protocols.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		45104F3D773F0D9A33D02472EF560E3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B07641795B021F4689800C6984798117 /* BXPhotoViewer.bundle */,
+				BDFE93EDCC27728E4E90FA8EC8B41EEE /* BXPhotoViewer.framework */,
+				3F23101085C80ABD947F2532AE4E5212 /* PinAutoLayout.bundle */,
+				5ED396584B8DD62F8A0868AB4554FDB9 /* PinAutoLayout.framework */,
+				3AC00BA84B06EC3A7173F1E64144EABB /* Pods_BXPhotoViewer_Example.framework */,
+				8C337C4D9E7C6A90437E14FC0A65EC27 /* Pods_BXPhotoViewer_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		497CE218F907D2D59E450EFDA29A4442 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				39DD7246D45ED04B5026E81B96386DEC /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		4CE765D5DFF60339016BA665DCEAC017 /* PinAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				8E27E0E9663D1C0B9B74EB5837417B9F /* UIView+LinearAutoLayout.swift */,
+				D7B39C87B7AF3707E2D86B298ACC3B4A /* UIView+PinAutoLayout.swift */,
+				7FE830C2CDECF97EE5ED57A6E544B2FB /* UIViewController+PinAutoLayout.swift */,
+				69F621B3CD572B373B3FDA7C578A09B8 /* Support Files */,
+			);
+			path = PinAutoLayout;
+			sourceTree = "<group>";
+		};
+		69F621B3CD572B373B3FDA7C578A09B8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				39463CFE66B8E063B3A248F16F933380 /* Info.plist */,
+				CB6008A525BE8C82AA2AAD4AF9D3D579 /* PinAutoLayout.modulemap */,
+				7A384A42ED35DF3BA2947540581A7DEF /* PinAutoLayout.xcconfig */,
+				E5E689C14E2C9F549430AF1A99A09226 /* PinAutoLayout-dummy.m */,
+				DF338EA4F52358367DD95ED81D3D01C2 /* PinAutoLayout-prefix.pch */,
+				94F7A4AE0426476C947A70C7B4025C42 /* PinAutoLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PinAutoLayout";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				86B54E36AE680E35AB699E07FB42B917 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C6FF86527080A6ABFC16B69A3DC0DFFB /* Pods */,
-				133CD9DAEF11933CC235DFDED18F07CD /* Products */,
+				1201521216F8B776BC26CF7133978281 /* Frameworks */,
+				EB1753F6629825682FF424157A1C5532 /* Pods */,
+				45104F3D773F0D9A33D02472EF560E3F /* Products */,
 				38A7B47F7EB3B736559CE96AD26D534B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -172,14 +310,6 @@
 			path = "Target Support Files/Pods-BXPhotoViewer_Example";
 			sourceTree = "<group>";
 		};
-		81C689C3AFC1C7FF242CFAB8DDD09E4A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				12DFEEB3509D877B6CE65BCE2EEB0562 /* Reveal.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		86B54E36AE680E35AB699E07FB42B917 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,54 +318,22 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		8AC1E2D1ED080817A46097FA4D453C7A /* Pod */ = {
+		BAFCA0D9EF3FE66313EC66209384C7A9 /* Reveal-iOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				E1FDCD279B83C47F7DFB0F6B13E2B4A1 /* Classes */,
+				3265211EA0B77E314A6A817F825E8A88 /* Frameworks */,
 			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		C6FF86527080A6ABFC16B69A3DC0DFFB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D70BEE20B57C04A4512260E625802768 /* Reveal-iOS-SDK */,
-			);
-			name = Pods;
+			path = "Reveal-iOS-SDK";
 			sourceTree = "<group>";
 		};
 		C76F6162473CAD12A696F033EF2D21FC /* BXPhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
-				8AC1E2D1ED080817A46097FA4D453C7A /* Pod */,
+				497CE218F907D2D59E450EFDA29A4442 /* Pod */,
 				DC08B4C4CF0AB33736AF2947686C8CFE /* Support Files */,
 			);
 			name = BXPhotoViewer;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		D70BEE20B57C04A4512260E625802768 /* Reveal-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				81C689C3AFC1C7FF242CFAB8DDD09E4A /* Frameworks */,
-			);
-			path = "Reveal-iOS-SDK";
 			sourceTree = "<group>";
 		};
 		DC08B4C4CF0AB33736AF2947686C8CFE /* Support Files */ = {
@@ -252,15 +350,13 @@
 			path = "Example/Pods/Target Support Files/BXPhotoViewer";
 			sourceTree = "<group>";
 		};
-		E1FDCD279B83C47F7DFB0F6B13E2B4A1 /* Classes */ = {
+		EB1753F6629825682FF424157A1C5532 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DD583A33EAFE199E3D783F4D6BE8CAFB /* BXImageScrollView.swift */,
-				8C8D95E15B35894184F42E995EB89EC5 /* BXPhotoViewController.swift */,
-				015B233E8B9F2057F567699BFCAD68BE /* BXPhotoViewerViewController.swift */,
-				006DA5B68DA9F9A880518D24CCC15C5D /* protocols.swift */,
+				4CE765D5DFF60339016BA665DCEAC017 /* PinAutoLayout */,
+				BAFCA0D9EF3FE66313EC66209384C7A9 /* Reveal-iOS-SDK */,
 			);
-			path = Classes;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		EC132AE6384A48A771707FF7CDB12ED2 /* Pods-BXPhotoViewer_Tests */ = {
@@ -284,76 +380,123 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		65BE4E7855B759618A787D9730E84630 /* Headers */ = {
+		2DFA5A0CFC02B3E952E2F07C98EFBA45 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CF101ABF705233C69E09AA4258EC73E /* BXPhotoViewer-umbrella.h in Headers */,
+				5515022D6D7FFDB311994D247266C0CF /* Pods-BXPhotoViewer_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C5462FE7823B3519751BC909F4F2D1B /* Headers */ = {
+		3A988CDEF0AD606EAC794379F489ED68 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD33E37CC97251030DC36DF11CC81D81 /* Pods-BXPhotoViewer_Tests-umbrella.h in Headers */,
+				7134075175765068E6E7AF82CD49A1F0 /* BXPhotoViewer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3ED4F9F9955D2CEFF1994909804E889 /* Headers */ = {
+		BA7A71DE3EFDC9E3B1893C7BC3B42ABF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C971DD15F3A44A68867E51571806D75 /* Pods-BXPhotoViewer_Example-umbrella.h in Headers */,
+				6360C731ED3EC57E09F8436EF4AD4AFE /* Pods-BXPhotoViewer_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F930E58D6FF88C8C37D9729369D4A2DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60087EB1A3F71CE8A0065CE58FD2B30 /* PinAutoLayout-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7785BDBE836A591D45D17F8587EC30E7 /* Pods-BXPhotoViewer_Example */ = {
+		5A909085E642C860C7D577F4C306542D /* Pods-BXPhotoViewer_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7283C6F42732696F95EB373E7921634C /* Build configuration list for PBXNativeTarget "Pods-BXPhotoViewer_Example" */;
+			buildConfigurationList = A6D4526AE8585E67572594383A4B72D3 /* Build configuration list for PBXNativeTarget "Pods-BXPhotoViewer_Example" */;
 			buildPhases = (
-				1191515A39B2145A9D3D840DDBD6E9E2 /* Sources */,
-				3B537CA98F304B6F10BB7AC088CEF532 /* Frameworks */,
-				E3ED4F9F9955D2CEFF1994909804E889 /* Headers */,
+				AF0FCC6FDEBAFADCA8C22423E2247CCC /* Sources */,
+				1D47EC26A01C8D402777434CF0EFF3C3 /* Frameworks */,
+				2DFA5A0CFC02B3E952E2F07C98EFBA45 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B264F849C069A4DFCD92C7DB1FBA2324 /* PBXTargetDependency */,
+				D7BC2DA91E564B72BF3BF6D58A807EA1 /* PBXTargetDependency */,
+				3C1B2F3D658EF87B9AE0F6FB3FC696C5 /* PBXTargetDependency */,
 			);
 			name = "Pods-BXPhotoViewer_Example";
 			productName = "Pods-BXPhotoViewer_Example";
-			productReference = 9145F6703C8EB97C42C5CCE72BD0C715 /* Pods_BXPhotoViewer_Example.framework */;
+			productReference = 3AC00BA84B06EC3A7173F1E64144EABB /* Pods_BXPhotoViewer_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9E0CD1FAA47AFEEC37C6F12526191C62 /* Pods-BXPhotoViewer_Tests */ = {
+		97767A33F877B86988D719AFC565E4A5 /* Pods-BXPhotoViewer_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01794B78DAE2D43890B149AE0F61175B /* Build configuration list for PBXNativeTarget "Pods-BXPhotoViewer_Tests" */;
+			buildConfigurationList = 70D5C4CFFE8A561D37D0E8997EDC3E5B /* Build configuration list for PBXNativeTarget "Pods-BXPhotoViewer_Tests" */;
 			buildPhases = (
-				729010344524ECA5B3CB258797388A10 /* Sources */,
-				B75572697CB68A91ED3D8754AB01E6DC /* Frameworks */,
-				7C5462FE7823B3519751BC909F4F2D1B /* Headers */,
+				9A7A27242D56543D03BC0E8467DE9E0C /* Sources */,
+				FDBB8FBBBD6E37BA8BF7DF15C5EB70BA /* Frameworks */,
+				BA7A71DE3EFDC9E3B1893C7BC3B42ABF /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0C1459D897B320AEABFBD4EE712A5416 /* PBXTargetDependency */,
+				0F26FD71E48F5D9F7A800979E04FDCA0 /* PBXTargetDependency */,
+				FEFBF7CB975DE5B5DC3CD6C3A4D2A398 /* PBXTargetDependency */,
 			);
 			name = "Pods-BXPhotoViewer_Tests";
 			productName = "Pods-BXPhotoViewer_Tests";
-			productReference = DB86A3A1860CFD468AC9F27294C6AA65 /* Pods_BXPhotoViewer_Tests.framework */;
+			productReference = 8C337C4D9E7C6A90437E14FC0A65EC27 /* Pods_BXPhotoViewer_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BF3F8B1DE7CF31BFF6B3CE84867C439B /* BXPhotoViewer-BXPhotoViewer */ = {
+		AB7F26A473F4C5A2303F655522943A1D /* PinAutoLayout-PinAutoLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FF0332FD8524DE9F8ACBCE2389452F7 /* Build configuration list for PBXNativeTarget "BXPhotoViewer-BXPhotoViewer" */;
+			buildConfigurationList = BBF73D93578DDF1E08A134AB9F60DDCF /* Build configuration list for PBXNativeTarget "PinAutoLayout-PinAutoLayout" */;
 			buildPhases = (
-				3824EB19E756526A46EE5475690C9732 /* Sources */,
-				190A50FDF6BB7E60090F69BAF8467033 /* Frameworks */,
-				F4B867CE7F8BF7A5050ACE5E68E093C7 /* Resources */,
+				3BD756185A0AB08D40C48F3397D8D286 /* Sources */,
+				E6EE90FAC6609F966E53DE5FCD228096 /* Frameworks */,
+				E9BFCE3DB6EFB658E8B15048927AD930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PinAutoLayout-PinAutoLayout";
+			productName = "PinAutoLayout-PinAutoLayout";
+			productReference = 3F23101085C80ABD947F2532AE4E5212 /* PinAutoLayout.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B875AB193A58C09D41AF179F6AE8E323 /* BXPhotoViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53A22AD2A1C49E36B61C509650A523FA /* Build configuration list for PBXNativeTarget "BXPhotoViewer" */;
+			buildPhases = (
+				03A157D0B604DDC52C1FDEF8042FC459 /* Sources */,
+				C61AB83F205B6023FB5DEA2A0F73D365 /* Frameworks */,
+				72E119C537B7610F3594F402F5DFAFE9 /* Resources */,
+				3A988CDEF0AD606EAC794379F489ED68 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D12464187E562B670AB6F2FCE2EA622C /* PBXTargetDependency */,
+				2C92E741429E13D602D183AADD9D4645 /* PBXTargetDependency */,
+			);
+			name = BXPhotoViewer;
+			productName = BXPhotoViewer;
+			productReference = BDFE93EDCC27728E4E90FA8EC8B41EEE /* BXPhotoViewer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DBEB613BBBB0633177C85A0327AD952C /* BXPhotoViewer-BXPhotoViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CFDCB976643CC0B8709A6C8C05BE107 /* Build configuration list for PBXNativeTarget "BXPhotoViewer-BXPhotoViewer" */;
+			buildPhases = (
+				B98DD1DA3558A78E406477115A6733F3 /* Sources */,
+				C74BDAD177CA5B12E44A74E9F7521DA4 /* Frameworks */,
+				816AC9B783921C20FDB8ED80F47FFFD5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -361,26 +504,26 @@
 			);
 			name = "BXPhotoViewer-BXPhotoViewer";
 			productName = "BXPhotoViewer-BXPhotoViewer";
-			productReference = AD2A256ED2D1E13BB613FC89EC8B5923 /* BXPhotoViewer.bundle */;
+			productReference = B07641795B021F4689800C6984798117 /* BXPhotoViewer.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		F4D993A46719BD17DC1DB66CAC2FBA51 /* BXPhotoViewer */ = {
+		F700E92C235F037964975EBAA2E891D4 /* PinAutoLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CDB9370FDE33C31C0EB2DFF680334C9 /* Build configuration list for PBXNativeTarget "BXPhotoViewer" */;
+			buildConfigurationList = 2A3BEFC22D5EEF152027544D00EDF124 /* Build configuration list for PBXNativeTarget "PinAutoLayout" */;
 			buildPhases = (
-				ADAB6F3AB3A2676945DB64010531BAA5 /* Sources */,
-				9CF120726E67CF6CC609636595726BAF /* Frameworks */,
-				3C22FF643E52B1183804E66044B5967A /* Resources */,
-				65BE4E7855B759618A787D9730E84630 /* Headers */,
+				8F445C24617A424DB1EB91082D03FF08 /* Sources */,
+				C88344475480793712A6A341844B7EC2 /* Frameworks */,
+				FC05E13F7EF26581AC32991B72C27256 /* Resources */,
+				F930E58D6FF88C8C37D9729369D4A2DE /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				51715273C2709687556F9EA70C6B97AB /* PBXTargetDependency */,
+				7919CEBBDA7693E080F8FA965509A5AA /* PBXTargetDependency */,
 			);
-			name = BXPhotoViewer;
-			productName = BXPhotoViewer;
-			productReference = DC6B834C11C40BA0A335E6EA41B07AE0 /* BXPhotoViewer.framework */;
+			name = PinAutoLayout;
+			productName = PinAutoLayout;
+			productReference = 5ED396584B8DD62F8A0868AB4554FDB9 /* PinAutoLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -400,97 +543,308 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 133CD9DAEF11933CC235DFDED18F07CD /* Products */;
+			productRefGroup = 45104F3D773F0D9A33D02472EF560E3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F4D993A46719BD17DC1DB66CAC2FBA51 /* BXPhotoViewer */,
-				BF3F8B1DE7CF31BFF6B3CE84867C439B /* BXPhotoViewer-BXPhotoViewer */,
-				7785BDBE836A591D45D17F8587EC30E7 /* Pods-BXPhotoViewer_Example */,
-				9E0CD1FAA47AFEEC37C6F12526191C62 /* Pods-BXPhotoViewer_Tests */,
+				B875AB193A58C09D41AF179F6AE8E323 /* BXPhotoViewer */,
+				DBEB613BBBB0633177C85A0327AD952C /* BXPhotoViewer-BXPhotoViewer */,
+				F700E92C235F037964975EBAA2E891D4 /* PinAutoLayout */,
+				AB7F26A473F4C5A2303F655522943A1D /* PinAutoLayout-PinAutoLayout */,
+				5A909085E642C860C7D577F4C306542D /* Pods-BXPhotoViewer_Example */,
+				97767A33F877B86988D719AFC565E4A5 /* Pods-BXPhotoViewer_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3C22FF643E52B1183804E66044B5967A /* Resources */ = {
+		72E119C537B7610F3594F402F5DFAFE9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1FC016569ABAC36047531ED574E4A1B /* BXPhotoViewer.bundle in Resources */,
+				338A8A0518B380327D83B3D354DF4067 /* BXPhotoViewer.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4B867CE7F8BF7A5050ACE5E68E093C7 /* Resources */ = {
+		816AC9B783921C20FDB8ED80F47FFFD5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9BFCE3DB6EFB658E8B15048927AD930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC05E13F7EF26581AC32991B72C27256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7170859B55EDE21CE612EF9306C295 /* PinAutoLayout.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1191515A39B2145A9D3D840DDBD6E9E2 /* Sources */ = {
+		03A157D0B604DDC52C1FDEF8042FC459 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7972A7B610D29B43F70EEE10D3604667 /* Pods-BXPhotoViewer_Example-dummy.m in Sources */,
+				195A3907088D0F8C7039E9A46A5D898F /* BXImageScrollView.swift in Sources */,
+				6928073690DD95DC555EDA30DB77D5EE /* BXPhotoInteractiveCompressViewController.swift in Sources */,
+				E8D36338B5E973B658145758DC722EF5 /* BXPhotoViewController.swift in Sources */,
+				C91A8D0C9A3B9BB20526608DF46F0B8B /* BXPhotoViewer-dummy.m in Sources */,
+				3AE70293A078EE5441BE3830460B208A /* BXPhotoViewerViewController.swift in Sources */,
+				EBFCFA7C99BAAB2847A0C6E7B2D95F6C /* protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3824EB19E756526A46EE5475690C9732 /* Sources */ = {
+		3BD756185A0AB08D40C48F3397D8D286 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		729010344524ECA5B3CB258797388A10 /* Sources */ = {
+		8F445C24617A424DB1EB91082D03FF08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20CB3581641389A29D5E5093CD8CFB6B /* Pods-BXPhotoViewer_Tests-dummy.m in Sources */,
+				C45FF62B51BC7D0B94F522AE2FCF7A1C /* PinAutoLayout-dummy.m in Sources */,
+				34BF8F370A5F626CD2921398DB369375 /* UIView+LinearAutoLayout.swift in Sources */,
+				1F7F5F70CC3033CF04120979AD4F113C /* UIView+PinAutoLayout.swift in Sources */,
+				E0FA4F122D904D82594F40E4DB65BF31 /* UIViewController+PinAutoLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADAB6F3AB3A2676945DB64010531BAA5 /* Sources */ = {
+		9A7A27242D56543D03BC0E8467DE9E0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C4FC6E1024AD5952EFF59158100902C /* BXImageScrollView.swift in Sources */,
-				0FCE67D7A86C9E892C4EBC8A9F5A21BA /* BXPhotoViewController.swift in Sources */,
-				D183C8CDAED622896764AF2663462E9C /* BXPhotoViewer-dummy.m in Sources */,
-				5466BBCCB20D0C6E9D31C5BB45ED0086 /* BXPhotoViewerViewController.swift in Sources */,
-				917A68938F2E97B95A6A9B3312D0CC53 /* protocols.swift in Sources */,
+				CB4D2E99FEBB52ACC6A9165FD3AFF5E6 /* Pods-BXPhotoViewer_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF0FCC6FDEBAFADCA8C22423E2247CCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBED25F2359156AC90598579A29A7B99 /* Pods-BXPhotoViewer_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98DD1DA3558A78E406477115A6733F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C1459D897B320AEABFBD4EE712A5416 /* PBXTargetDependency */ = {
+		0F26FD71E48F5D9F7A800979E04FDCA0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BXPhotoViewer;
-			target = F4D993A46719BD17DC1DB66CAC2FBA51 /* BXPhotoViewer */;
-			targetProxy = D6B4C4940BD37D54C9044AF676AB9349 /* PBXContainerItemProxy */;
+			target = B875AB193A58C09D41AF179F6AE8E323 /* BXPhotoViewer */;
+			targetProxy = 984563EBF15D1310BD79307FFFC8D595 /* PBXContainerItemProxy */;
 		};
-		51715273C2709687556F9EA70C6B97AB /* PBXTargetDependency */ = {
+		2C92E741429E13D602D183AADD9D4645 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PinAutoLayout;
+			target = F700E92C235F037964975EBAA2E891D4 /* PinAutoLayout */;
+			targetProxy = BCCD9BC6F545F0B20899F6285FAB3738 /* PBXContainerItemProxy */;
+		};
+		3C1B2F3D658EF87B9AE0F6FB3FC696C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PinAutoLayout;
+			target = F700E92C235F037964975EBAA2E891D4 /* PinAutoLayout */;
+			targetProxy = 530D3636CD0F9A727B09F39C2E41302A /* PBXContainerItemProxy */;
+		};
+		7919CEBBDA7693E080F8FA965509A5AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PinAutoLayout-PinAutoLayout";
+			target = AB7F26A473F4C5A2303F655522943A1D /* PinAutoLayout-PinAutoLayout */;
+			targetProxy = 969DD34C6A1AD1A008B46900449A1BDD /* PBXContainerItemProxy */;
+		};
+		D12464187E562B670AB6F2FCE2EA622C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "BXPhotoViewer-BXPhotoViewer";
-			target = BF3F8B1DE7CF31BFF6B3CE84867C439B /* BXPhotoViewer-BXPhotoViewer */;
-			targetProxy = 71AE9B5778EFDB9F84C12DE595FCAED5 /* PBXContainerItemProxy */;
+			target = DBEB613BBBB0633177C85A0327AD952C /* BXPhotoViewer-BXPhotoViewer */;
+			targetProxy = B49AA70038EBE7D5270B90D0D8938873 /* PBXContainerItemProxy */;
 		};
-		B264F849C069A4DFCD92C7DB1FBA2324 /* PBXTargetDependency */ = {
+		D7BC2DA91E564B72BF3BF6D58A807EA1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BXPhotoViewer;
-			target = F4D993A46719BD17DC1DB66CAC2FBA51 /* BXPhotoViewer */;
-			targetProxy = 520BA8F0B29CE46880F569B30C8AFE2A /* PBXContainerItemProxy */;
+			target = B875AB193A58C09D41AF179F6AE8E323 /* BXPhotoViewer */;
+			targetProxy = 898DA9532BE2D5F6770B38CB6E345C35 /* PBXContainerItemProxy */;
+		};
+		FEFBF7CB975DE5B5DC3CD6C3A4D2A398 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PinAutoLayout;
+			target = F700E92C235F037964975EBAA2E891D4 /* PinAutoLayout */;
+			targetProxy = 92D924B6047B2816ADE77D48B88DA979 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		38F62D4BE2784EC0D6BA9DA15FB2D8FA /* Debug */ = {
+		00D1DD6DF70570D3423E0C884ABD4409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D89DE3CE3ECDEE92D6610FFD56372C9 /* Pods-BXPhotoViewer_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BXPhotoViewer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BXPhotoViewer_Tests/Pods-BXPhotoViewer_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BXPhotoViewer_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		031F73F91675B55F4F27DEB1F96B313B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A384A42ED35DF3BA2947540581A7DEF /* PinAutoLayout.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = PinAutoLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		42F90CAA35AA2AD2FE9B255B2C471F28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 461D1DADCE59677E38ADAEE4F9265A77 /* BXPhotoViewer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BXPhotoViewer/BXPhotoViewer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BXPhotoViewer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BXPhotoViewer/BXPhotoViewer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BXPhotoViewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48FDDA0C4B7B2C1ED88AE30D1D22F669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F3DC733C4A30F45A380EACA7CB93108 /* Pods-BXPhotoViewer_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BXPhotoViewer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BXPhotoViewer_Example/Pods-BXPhotoViewer_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BXPhotoViewer_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83A44480406778BA9A72715A268BA1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 461D1DADCE59677E38ADAEE4F9265A77 /* BXPhotoViewer.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BXPhotoViewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8FB188A04657E5BAB1593A92788DDF49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 461D1DADCE59677E38ADAEE4F9265A77 /* BXPhotoViewer.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BXPhotoViewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		972F8D25470C625F5D7035E26D3CAD7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A384A42ED35DF3BA2947540581A7DEF /* PinAutoLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PinAutoLayout/PinAutoLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PinAutoLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PinAutoLayout/PinAutoLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PinAutoLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		98FD7802666C55750836D1F3E69330F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FBA7668C1F1469E659F774D3F092C463 /* Pods-BXPhotoViewer_Example.debug.xcconfig */;
 			buildSettings = {
@@ -521,9 +875,9 @@
 			};
 			name = Debug;
 		};
-		4C5266F1048F48D5FD000928AF907D87 /* Debug */ = {
+		99B87CA63020EE3976E9714B1B81009F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA60D6EBCC23FF6E981D7A51D92DC730 /* Pods-BXPhotoViewer_Tests.debug.xcconfig */;
+			baseConfigurationReference = 461D1DADCE59677E38ADAEE4F9265A77 /* BXPhotoViewer.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -532,17 +886,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BXPhotoViewer_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/BXPhotoViewer/BXPhotoViewer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BXPhotoViewer/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BXPhotoViewer_Tests/Pods-BXPhotoViewer_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/BXPhotoViewer/BXPhotoViewer.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_BXPhotoViewer_Tests;
+				PRODUCT_NAME = BXPhotoViewer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -552,65 +903,17 @@
 			};
 			name = Debug;
 		};
-		5256EA0E4F01767C8B04811C67611299 /* Release */ = {
+		A164E8684EA0F0850EF81BC735C60C69 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D89DE3CE3ECDEE92D6610FFD56372C9 /* Pods-BXPhotoViewer_Tests.release.xcconfig */;
+			baseConfigurationReference = 7A384A42ED35DF3BA2947540581A7DEF /* PinAutoLayout.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BXPhotoViewer_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BXPhotoViewer_Tests/Pods-BXPhotoViewer_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_BXPhotoViewer_Tests;
+				PRODUCT_NAME = PinAutoLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
-		};
-		A170ADD4381195C9AE130D21A4ACC920 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F3DC733C4A30F45A380EACA7CB93108 /* Pods-BXPhotoViewer_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BXPhotoViewer_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BXPhotoViewer_Example/Pods-BXPhotoViewer_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_BXPhotoViewer_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
+			name = Debug;
 		};
 		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -651,9 +954,9 @@
 			};
 			name = Debug;
 		};
-		AF0EE0DD748DFF512B3220A818D173FB /* Debug */ = {
+		B912D36CA1DF022FA107142688B9F8A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 461D1DADCE59677E38ADAEE4F9265A77 /* BXPhotoViewer.xcconfig */;
+			baseConfigurationReference = 7A384A42ED35DF3BA2947540581A7DEF /* PinAutoLayout.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -662,44 +965,19 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BXPhotoViewer/BXPhotoViewer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BXPhotoViewer/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PinAutoLayout/PinAutoLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PinAutoLayout/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BXPhotoViewer/BXPhotoViewer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BXPhotoViewer;
+				MODULEMAP_FILE = "Target Support Files/PinAutoLayout/PinAutoLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PinAutoLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D738DA89CD0E395252B35C11DD021A2E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 461D1DADCE59677E38ADAEE4F9265A77 /* BXPhotoViewer.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = BXPhotoViewer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		F458F2EC772DCD7F4B06E5E4BA3CEF3D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 461D1DADCE59677E38ADAEE4F9265A77 /* BXPhotoViewer.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = BXPhotoViewer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -737,9 +1015,9 @@
 			};
 			name = Release;
 		};
-		FC36D7542BDA1E78066D1A502102CC13 /* Release */ = {
+		FCB51AD7BEB5ACC0C17E552E4FD6A760 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 461D1DADCE59677E38ADAEE4F9265A77 /* BXPhotoViewer.xcconfig */;
+			baseConfigurationReference = AA60D6EBCC23FF6E981D7A51D92DC730 /* Pods-BXPhotoViewer_Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -748,30 +1026,34 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BXPhotoViewer/BXPhotoViewer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BXPhotoViewer/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BXPhotoViewer_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BXPhotoViewer/BXPhotoViewer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BXPhotoViewer;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BXPhotoViewer_Tests/Pods-BXPhotoViewer_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BXPhotoViewer_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01794B78DAE2D43890B149AE0F61175B /* Build configuration list for PBXNativeTarget "Pods-BXPhotoViewer_Tests" */ = {
+		2A3BEFC22D5EEF152027544D00EDF124 /* Build configuration list for PBXNativeTarget "PinAutoLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C5266F1048F48D5FD000928AF907D87 /* Debug */,
-				5256EA0E4F01767C8B04811C67611299 /* Release */,
+				972F8D25470C625F5D7035E26D3CAD7A /* Debug */,
+				B912D36CA1DF022FA107142688B9F8A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -785,29 +1067,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FF0332FD8524DE9F8ACBCE2389452F7 /* Build configuration list for PBXNativeTarget "BXPhotoViewer-BXPhotoViewer" */ = {
+		4CFDCB976643CC0B8709A6C8C05BE107 /* Build configuration list for PBXNativeTarget "BXPhotoViewer-BXPhotoViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D738DA89CD0E395252B35C11DD021A2E /* Debug */,
-				F458F2EC772DCD7F4B06E5E4BA3CEF3D /* Release */,
+				83A44480406778BA9A72715A268BA1EB /* Debug */,
+				8FB188A04657E5BAB1593A92788DDF49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7283C6F42732696F95EB373E7921634C /* Build configuration list for PBXNativeTarget "Pods-BXPhotoViewer_Example" */ = {
+		53A22AD2A1C49E36B61C509650A523FA /* Build configuration list for PBXNativeTarget "BXPhotoViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38F62D4BE2784EC0D6BA9DA15FB2D8FA /* Debug */,
-				A170ADD4381195C9AE130D21A4ACC920 /* Release */,
+				99B87CA63020EE3976E9714B1B81009F /* Debug */,
+				42F90CAA35AA2AD2FE9B255B2C471F28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CDB9370FDE33C31C0EB2DFF680334C9 /* Build configuration list for PBXNativeTarget "BXPhotoViewer" */ = {
+		70D5C4CFFE8A561D37D0E8997EDC3E5B /* Build configuration list for PBXNativeTarget "Pods-BXPhotoViewer_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AF0EE0DD748DFF512B3220A818D173FB /* Debug */,
-				FC36D7542BDA1E78066D1A502102CC13 /* Release */,
+				FCB51AD7BEB5ACC0C17E552E4FD6A760 /* Debug */,
+				00D1DD6DF70570D3423E0C884ABD4409 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6D4526AE8585E67572594383A4B72D3 /* Build configuration list for PBXNativeTarget "Pods-BXPhotoViewer_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FD7802666C55750836D1F3E69330F1 /* Debug */,
+				48FDDA0C4B7B2C1ED88AE30D1D22F669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBF73D93578DDF1E08A134AB9F60DDCF /* Build configuration list for PBXNativeTarget "PinAutoLayout-PinAutoLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A164E8684EA0F0850EF81BC735C60C69 /* Debug */,
+				031F73F91675B55F4F27DEB1F96B313B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
