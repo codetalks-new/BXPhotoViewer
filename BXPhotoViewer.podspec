@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BXPhotoViewer"
-  s.version          = "1.0.1"
+  s.version          = "1.1.0"
   s.summary          = "BXPhotoViewer is a simple Photo Viewer ViewController "
 
 # This description is used to generate tags and improve search results.
@@ -32,11 +32,7 @@ One for viewer simgle Photo,One for browser a set of Phtos.
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'BXPhotoViewer' => ['Pod/Assets/*.png']
-  }
-
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'PinAutoLayout'
+  s.dependency 'PinAuto'
 end

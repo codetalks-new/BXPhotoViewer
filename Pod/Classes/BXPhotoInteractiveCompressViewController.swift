@@ -15,7 +15,7 @@ public protocol BXPhotoInteractiveCompressViewControllerDelegate: class{
 
 // Build for target uicontroller
 import UIKit
-import PinAutoLayout
+import PinAuto
 
 // -BXPhotoInteractiveCompressViewController:vc
 // preview[e0]:v; cancel[t20,l15,w52,a1]:b;ok[t20,r15,w52,a1]:b;quality[l8,r8,b20]:sl
@@ -74,25 +74,25 @@ public class BXPhotoInteractiveCompressViewController : UIViewController {
   }
   
   func installConstaints(){
-    previewView.pinEdge(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
+    previewView.pac_edge()
     
-    cancelButton.pinAspectRatio(1)
-    pinTopLayoutGuide(cancelButton,margin:8)
-    cancelButton.pinWidth(52)
-    cancelButton.pinLeading(15)
+    cancelButton.pa_aspectRatio(1).install()
+    cancelButton.pa_below(topLayoutGuide, offset: 8).install()
+    cancelButton.pa_width.eq(52).install()
+    cancelButton.pa_leading.eq(15).install()
     
-    okButton.pinAspectRatio(1)
-    okButton.pinTrailing(15)
-    pinTopLayoutGuide(okButton,margin:8)
-    okButton.pinWidth(52)
+    okButton.pa_aspectRatio(1).install()
+    okButton.pa_trailing.eq(15).install()
+    okButton.pa_below(topLayoutGuide, offset: 8).install()
+    okButton.pa_width.eq(52).install()
     
-    qualitySlider.pinTrailing(8)
-    pinBottomLayoutGuide(qualitySlider,margin:20)
-    qualitySlider.pinLeading(8)
+    qualitySlider.pa_trailing.eq(8).install()
+    qualitySlider.pa_above(qualitySlider, offset: 20).install()
+    qualitySlider.pa_leading.eq(8).install()
     
-    imageInfoLabel.pinAboveSibling(qualitySlider, margin: 8)
-    imageInfoLabel.pinHeight(36)
-    imageInfoLabel.pinHorizontal(0)
+    imageInfoLabel.pa_above(qualitySlider, offset: 8).install()
+    imageInfoLabel.pa_height.eq(36).install()
+    imageInfoLabel.pac_horizontal(0)
     
   }
   
@@ -122,7 +122,7 @@ public class BXPhotoInteractiveCompressViewController : UIViewController {
     
     qualitySlider.minimumValue = 0.2
     qualitySlider.maximumValue = 0.8
-    qualitySlider.addTarget(self, action: "onQualityValueChanged:", forControlEvents: .ValueChanged)
+    qualitySlider.addTarget(self, action: #selector(BXPhotoInteractiveCompressViewController.onQualityValueChanged(_:)), forControlEvents: .ValueChanged)
     
     imageInfoLabel.font = UIFont.systemFontOfSize(14)
     imageInfoLabel.textColor = UIColor.whiteColor()
@@ -131,8 +131,8 @@ public class BXPhotoInteractiveCompressViewController : UIViewController {
     cancelButton.setTitle("取消", forState: .Normal)
     okButton.setTitle("确定", forState: .Normal)
     
-    cancelButton.addTarget(self, action: "onCancel:", forControlEvents: .TouchUpInside)
-    okButton.addTarget(self, action: "onOk:", forControlEvents: .TouchUpInside)
+    cancelButton.addTarget(self, action: #selector(BXPhotoInteractiveCompressViewController.onCancel(_:)), forControlEvents: .TouchUpInside)
+    okButton.addTarget(self, action: #selector(BXPhotoInteractiveCompressViewController.onOk(_:)), forControlEvents: .TouchUpInside)
 //    image
   }
   

@@ -45,6 +45,31 @@ public class BXImageScrollView: UIScrollView {
     bouncesZoom = true
     decelerationRate = UIScrollViewDecelerationRateFast
     delegate = self
+    setupDoubleTapRecognizer()
+  }
+  
+  func setupDoubleTapRecognizer(){
+    let doubleTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(onDoubleTap(_:)))
+    doubleTapRecognizer.numberOfTapsRequired = 2
+    doubleTapRecognizer.delaysTouchesBegan = true
+    
+    addGestureRecognizer(doubleTapRecognizer)
+    panGestureRecognizer.requireGestureRecognizerToFail(doubleTapRecognizer)
+  }
+  
+  func onDoubleTap(gesture:UITapGestureRecognizer){
+    let location = gesture.locationInView(self)
+    let center = convertPoint(location, toView: zoomView)
+    NSLog("location:\(location)")
+    
+    let currentZoomScale = zoomScale
+    if currentZoomScale > (minimumZoomScale + CGFloat(FLT_EPSILON)) {
+      setZoomScale(minimumZoomScale, animated: true)
+    }else{
+      let targetScale = minimumZoomScale * 2
+      scaleToCenter(center, scale: targetScale)
+//      setZoomScale(targetScale, animated: true)
+    }
   }
  
   public override func layoutSubviews() {
@@ -83,13 +108,18 @@ public class BXImageScrollView: UIScrollView {
 
   func recoverFromResizing(){
       setMaxMinZoomScalesForCurrentBounds()
-    // Step 1: restore zoom scale , first making sure it is within the allowable range
-    let maxZoomScale = max(minimumZoomScale,scaleToRestoreAfterResize)
+    // Step 1: restore zoom scale 
+    scaleToCenter(pointToCenterAfterResize, scale: scaleToRestoreAfterResize)
+  }
+  
+  func scaleToCenter(center:CGPoint,scale scale:CGFloat){
+    // making sure it is within the allowable range
+    let maxZoomScale = max(minimumZoomScale,scale)
     zoomScale = min(maximumZoomScale,maxZoomScale)
     
     // Step 2: restore center point, first making sure it is within the allowable range
     // 2a: convert our desired center point back to our own coordinate space
-    let boundsCenter = convertPoint(pointToCenterAfterResize, fromView: zoomView)
+    let boundsCenter = convertPoint(center, fromView: zoomView)
     // 2b: calcuate the content offset that would yield that center
     let offset = CGPoint(x: boundsCenter.x - bounds.width * 0.5, y: boundsCenter.y - bounds.height * 0.5)
     // 2c: restore offset, adjusted to be within the alloable range

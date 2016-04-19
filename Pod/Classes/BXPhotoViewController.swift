@@ -12,7 +12,7 @@ public extension UIViewController{
   
   public func presentPhoto(photo:BXPhotoViewable,loadImageBlock block:BXLoadImageBlock?=nil){
     let vc = BXPhotoViewController(photo: photo)
-    let doneButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: "bx_dismissPhotoViewController:")
+    let doneButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(UIViewController.bx_dismissPhotoViewController(_:)))
     vc.navigationItem.leftBarButtonItem = doneButton
     vc.automaticallyAdjustsScrollViewInsets = false
     vc.loadImageBlock = block
@@ -109,17 +109,17 @@ public class BXPhotoViewController: UIViewController {
     super.viewDidLayoutSubviews()
     scrollView.frame = self.view.bounds
     activityIndicator.center = self.view.center
-    NSLog("\(__FUNCTION__)")
+    NSLog("\(#function)")
   }
  
    // MARK: Rotate Support
   public override func shouldAutorotate() -> Bool {
-    NSLog("\(__FUNCTION__)")
+    NSLog("\(#function)")
     return true
   }
   
   public override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-    NSLog("\(__FUNCTION__)")
+    NSLog("\(#function)")
     return .AllButUpsideDown
   }
 

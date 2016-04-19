@@ -81,8 +81,7 @@ extension ViewController:BXPhotoInteractiveCompressViewControllerDelegate{
   func photoInteractiveCompressViewControllerDidCanceled(controller: BXPhotoInteractiveCompressViewController) {
     
   }
-  
-  func photoInteractiveCompressViewController(controller: BXPhotoInteractiveCompressViewController, compressedImage: UIImage) {
+  func photoInteractiveCompressViewController(controller:BXPhotoInteractiveCompressViewController,compressionQuality:CGFloat, compressedImage:UIImage){
     
   }
 }

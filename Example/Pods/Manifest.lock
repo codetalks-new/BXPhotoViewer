@@ -1,20 +1,19 @@
 PODS:
-  - BXPhotoViewer (1.0.0):
-    - PinAutoLayout
-  - PinAutoLayout (1.0.1)
-  - Reveal-iOS-SDK (1.6.2)
+  - BXPhotoViewer (1.0.1):
+    - PinAuto
+  - PinAuto (1.6)
 
 DEPENDENCIES:
   - BXPhotoViewer (from `../`)
-  - Reveal-iOS-SDK
 
 EXTERNAL SOURCES:
   BXPhotoViewer:
     :path: ../
 
 SPEC CHECKSUMS:
-  BXPhotoViewer: 3a1c19b82515eba082b7901e1dcc7fa6c5da240c
-  PinAutoLayout: ab4a1a9cdd9f2b6b1ea8371c8384be1164b0865e
-  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
+  BXPhotoViewer: 253ca45ad97bd56648ac91434d762414d0208a91
+  PinAuto: 3fea106a06036fedf49928e65a1bced151c02f8a
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 6bcae22c37a1aaf13b72000368701db5b90f5a15
+
+COCOAPODS: 1.0.0.beta.8

@@ -2,12 +2,12 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios,'8.0'
 use_frameworks!
 
-target 'BXPhotoViewer_Example', :exclusive => true do
+target 'BXPhotoViewer_Example' do
   pod "BXPhotoViewer", :path => "../"
-  pod 'Reveal-iOS-SDK', :configurations => ['Debug']
+  #pod 'Reveal-iOS-SDK', :configurations => ['Debug']
 end
 
-target 'BXPhotoViewer_Tests', :exclusive => true do
+target 'BXPhotoViewer_Tests' do
   pod "BXPhotoViewer", :path => "../"
 
   
