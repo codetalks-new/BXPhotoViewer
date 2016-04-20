@@ -8,6 +8,17 @@
 
 import UIKit
 
+
+extension CGRect{
+  
+  init(center center:CGPoint,width:CGFloat,height:CGFloat){
+    let x = center.x - width * 0.5
+    let y = center.y - height * 0.5
+    origin = CGPoint(x: x, y: y)
+    size = CGSize(width: width, height: height)
+  }
+}
+
 public class BXImageScrollView: UIScrollView {
   var zoomView: UIImageView?
   var pointToCenterAfterResize:CGPoint = CGPointZero
@@ -60,15 +71,13 @@ public class BXImageScrollView: UIScrollView {
   func onDoubleTap(gesture:UITapGestureRecognizer){
     let location = gesture.locationInView(self)
     let center = convertPoint(location, toView: zoomView)
-    NSLog("location:\(location)")
-    
     let currentZoomScale = zoomScale
     if currentZoomScale > (minimumZoomScale + CGFloat(FLT_EPSILON)) {
       setZoomScale(minimumZoomScale, animated: true)
     }else{
-      let targetScale = minimumZoomScale * 2
-      scaleToCenter(center, scale: targetScale)
-//      setZoomScale(targetScale, animated: true)
+//      let targetScale = minimumZoomScale * 2
+      let targetRect = CGRect(center:center,width: bounds.width,height: bounds.height)
+      zoomToRect(targetRect, animated: true)
     }
   }
  
